@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Авторские украшения AB PROJECT">
+  <meta name="keywords" content="украшения, авторские, колье, аксессуары, AB PROJECT">
+  <title>Мой первый сайт!</title>
+
+  <!-- Подключение шрифта -->
+  <style>
+    @font-face {
+      font-family: 'BS_Light';
+      src: url('BS_Light.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Универсальные стили */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'BS_Light', sans-serif;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    /* Титульный слайд */
+    .header {
+      background-image: url("ab_re.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end; /* Выравнивание текста справа */
+      align-items: flex-end; /* Выравнивание текста по низу */
+      padding: 50px;
+      position: relative;
+    }
+
+.foggy-glass-effect {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 36%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  color: white;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Это разместит текст внизу */
+  align-items: flex-end; /* Это выровняет текст по правому краю */
+  text-align: right; /* Это выровняет текст внутри блоков по правому краю */
+
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+    .big-text {
+      font-size: 45px;
+      font-weight: 1.4;
+      margin-bottom: 25px; /* Добавляем отступ снизу */
+    }
+
+    .small-text {
+      font-size: 20px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+
+    /* Второй слайд */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .grid-item {
+      background-color: white;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Усиленная тень */
+      padding: 20px;
+      text-align: left;
+      border-radius: 20px; /* Закругленные углы */
+      position: relative;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .grid-item p {
+      font-size: 18px;
+      margin-top: 0;
+      margin-right: 10px;
+      text-align: left;
+    }
+
+    /* Второй дополнительный текст в квадратных элементах */
+    .grid-item .second-text {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Титульный слайд -->
+<div class="header">
+  <div class="foggy-glass-effect">
+    <div class="big-text">Авторские украшения<br>AB PROJECT</div>
+    <div class="small-text">Откройте для себя мир AB PROJECT, где рождаются уникальные украшения с душой. Мы тщательно работаем над каждой деталью, чтобы вы могли носить не просто красивый аксессуар, а настоящее произведение искусства. AB PROJECT – это больше, чем украшения.</div>
+  </div>
+</div>
+
+  <!-- Второй слайд с квадратами -->
+  <section>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="image1.jpg" alt="Колье 1">
+        <p>Колье 1</p>
+        <p class="second-text">Это колье с уникальным дизайном.</p> <!-- Дополнительный текст -->
+      </div>
+      <div class="grid-item">
+        <img src="image2.jpg" alt="Колье 2">
+        <p>Колье 2</p>
+        <p class="second-text">Элегантность в каждой детали.</p> <!-- Дополнительный текст -->
+      </div>
+      <div class="grid-item">
+        <img src="image3.jpg" alt="Колье 3">
+        <p>Колье 3</p>
+        <p class="second-text">Произведение искусства для вашего стиля.</p> <!-- Дополнительный текст -->
+      </div>
+      <div class="grid-item">
+        <img src="image4.jpg" alt="Колье 4">
+        <p>Колье 4</p>
+        <p class="second-text">Сложные узоры и детали.</p> <!-- Дополнительный текст -->
+      </div>
+      <div class="grid-item">
+        <img src="image5.jpg" alt="Колье 5">
+        <p>Колье 5</p>
+        <p class="second-text">Модный акцент для любого наряда.</p> <!-- Дополнительный текст -->
+      </div>
+      <div class="grid-item">
+        <img src="image6.jpg" alt="Колье 6">
+        <p>Колье 6</p>
+        <p class="second-text">Изысканный дизайн для смелых решений.</p> <!-- Дополнительный текст -->
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
